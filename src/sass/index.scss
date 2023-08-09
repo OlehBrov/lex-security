@@ -1,2 +1,37 @@
 @import './common';
-@import './example';
+@import './media';
+@import './header';
+@import './mobileMenu';
+@import './hero';
+@import './advantages';
+
+body {
+  background-color: #1e2226;
+  font-family: 'Manrope', sans-serif;
+  color: #fff;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.container {
+  margin: 0 auto;
+  padding-left: 35px;
+  padding-right: 35px;
+  @media screen and (max-width: $mobile) {
+    max-width: $mobile;
+  }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+}
+.stop-scroll {
+  overflow: hidden;
+}

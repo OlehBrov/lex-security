@@ -1,0 +1,34 @@
+.hero-container{
+   padding-top: 50px;
+   border-bottom: 1px solid rgba($color: #fff, $alpha: 0.5);
+   padding-bottom: 50px;
+ 
+}
+
+.hero-header {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 90%;
+  margin-bottom: 90px;
+}
+
+.hero-header-stretch {
+  display: inline-block;
+  border: 4px solid #fff;
+  height: 20px;
+  width: 60px;
+  border-radius: 40px;
+}
+.block {
+  display: block;
+}
+.hero-list{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    gap: 35px;
+}
+.hero-list-item:last-child{
+    font-size: 14px;
+
+}
