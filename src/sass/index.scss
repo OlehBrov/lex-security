@@ -4,11 +4,20 @@
 @import './mobileMenu';
 @import './hero';
 @import './advantages';
+@import './price';
 
+@counter-style adv-counter-style {
+  system: fixed;
+  symbols: '1' '2' '4' '5' '6' '7' '8' '9';
+  pad: 2 '0';
+}
 body {
   background-color: #1e2226;
   font-family: 'Manrope', sans-serif;
   color: #fff;
+}
+ol {
+  list-style: none;
 }
 ul {
   list-style: none;
@@ -20,8 +29,8 @@ a {
 }
 .container {
   margin: 0 auto;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
   @media screen and (max-width: $mobile) {
     max-width: $mobile;
   }
@@ -34,4 +43,31 @@ a {
 }
 .stop-scroll {
   overflow: hidden;
+}
+.link-button {
+  display: flex;
+  width: 120px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: #174cc0;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-header {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80%;
+}
+
+.item-heading {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 80%;
 }

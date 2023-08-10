@@ -1,0 +1,24 @@
+.price-container {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.price-list {
+  display: flex;
+  padding-left: 24px;
+  padding-right: 15px;
+  flex-direction: column;
+  gap: 30px;
+}
+.price-list-item{
+    flex-direction: row;
+   width: 100%;
+    align-items: center;
+   
+}
+
+.price-list > .products-list-item > .item-heading::after {
+  margin-left: 8px;
+}
