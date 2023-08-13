@@ -1,0 +1,30 @@
+.partners-container{
+  padding-top: 40px;
+}
+.partners-header{
+  margin-bottom: 36px;
+}
+.partners-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.partners-list-item {
+  display: flex;
+  width: calc((100% - 21px) / 4);
+  background-color: #fff;
+}
+
+.partners-link {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  &:hover {
+    border: 1px solid red;
+  
+  }
+}

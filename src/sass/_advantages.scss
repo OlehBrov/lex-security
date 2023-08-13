@@ -3,30 +3,52 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 50px;
+  background-image: url(../images/bgs/Looper-advantages.svg);
+  background-position-y: -150px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
+@media screen and (min-width: $tablet) {
+  .container.advantages-container {
+    margin: -100px 0px 0px 0px;
+    background-position-y: -500px;
+  }
+}
+.advantages-header {
+  margin-bottom: 40px;
+}
 .advantages-list {
   display: flex;
   flex-direction: column;
   gap: 30px;
   padding-left: 41px;
   padding-right: 51px;
+  margin-bottom: 42px;
 }
 
 .products-list-item {
   display: flex;
   flex-direction: column;
 }
-.products-list-item > .item-heading::after {
-  content: '';
-  height: 2px;
-  width: 40px;
-  justify-self: center;
-  border: 1px solid #fff;
-  display: flex;
-  align-self: center;
-  /* top: 6px; */
-  margin: 0 auto;
+.products-list-item > .item-heading {
+  margin-bottom: 15px;
+  &::after {
+    content: '';
+    height: 2px;
+    width: 40px;
+    justify-self: center;
+    border: 1px solid #fff;
+    display: flex;
+    align-self: center;
+    /* top: 6px; */
+    margin: 0 auto;
+  }
+}
+
+.advantages-principles > .advantages-heading {
+  display: block;
+  padding-left: 23px;
+  margin-bottom: 53px;
 }
 .advantages-description {
   font-size: 9px;
@@ -40,17 +62,17 @@
   border-radius: 12px;
   border: 0.3px solid #fff;
 }
-.advantages-principles {
-  margin-top: 35px;
-}
 
 .advantages-principles-list {
-  padding: 0;
+  padding-left: 50px;
   counter-reset: adv-counter;
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-bottom: 35px;
+  &.services-list {
+    padding-right: 10px;
+  }
 }
 .advantages-principles-item {
   font-size: 9px;
@@ -60,8 +82,17 @@
   counter-increment: adv-counter;
   &::before {
     content: counter(adv-counter, adv-counter-style);
-    color: red;
+    color: #a6a6a6;
     margin-right: 5px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  &::first-letter {
+    color: #fff;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
   }
 }
 .description {

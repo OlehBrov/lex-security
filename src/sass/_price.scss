@@ -1,8 +1,14 @@
 .price-container {
-  padding-top: 50px;
+  padding-top: 33px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
-  padding-bottom: 50px;
+  // background: rgb(211, 211, 211);
+  background: linear-gradient(0deg, #16131380 0% 100%), url(../images/bgs/price-truck-bg.webp);
+  // background-image: url(../images/bgs/price-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-position-x: -60px;
 }
 
 .price-list {
@@ -10,15 +16,45 @@
   padding-left: 24px;
   padding-right: 15px;
   flex-direction: column;
-  gap: 30px;
+  gap: 40px;
+  margin-top: 24px;
+  margin-bottom: 26px;
 }
-.price-list-item{
-    flex-direction: row;
-   width: 100%;
-    align-items: center;
-   
+.price-list-item {
+  flex-direction: row;
+  width: 100%;
+  align-items: baseline;
 }
-
+.price-list > .products-list-item > .item-heading {
+  width: 100%;
+  margin-right: 8px;
+  white-space: nowrap;
+  margin: 0;
+}
 .price-list > .products-list-item > .item-heading::after {
   margin-left: 8px;
+  margin-right: 8px;
+  width: 100%;
+}
+.price-description-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.price-description {
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+    padding: 0;
+  // padding-left: 25px;
+  width: 200;
+  padding-right: 0;
+  &:nth-child(2n) {
+    // padding: 0;
+
+    // padding-left: 135px;
+    // margin-right: 0;
+    margin-left: 134px;
+  }
 }

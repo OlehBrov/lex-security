@@ -1,0 +1,65 @@
+@keyframes bg-anim {
+  0% {
+    background-position-x: left;
+  }
+
+  50% {
+    background-position-x: center;
+  }
+
+  100% {
+    background-position-x: right;
+  }
+}
+
+.services-container {
+  padding-top: 40px;
+  background-image: url(../images/bgs/Looper.svg);
+  background-position-y: -20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 40px;
+  animation: bg-anim 2000 linear 100ms infinite normal;
+}
+
+.services-list {
+  //   padding-left: 50px;
+  //   padding-right: 10px;
+  //   counter-reset: services-counter;
+  //   display: flex;
+  //   flex-direction: column;
+  gap: 11px;
+  margin-top: 25px;
+  margin-bottom: 31px;
+}
+.services-header {
+  margin-bottom: 25px;
+}
+// .services-list-item {
+//   font-size: 9px;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: normal;
+//   counter-increment: services-counter;
+
+//   &::before {
+//     content: counter(services-counter, services-counter-style);
+//     color: #a6a6a6;
+//     margin-right: 5px;
+//     font-size: 12px;
+//     font-style: normal;
+//     font-weight: 700;
+//   }
+
+//   &::first-letter {
+//     color: #fff;
+//     font-size: 12px;
+//     font-style: normal;
+//     font-weight: 700;
+//   }
+// }
+.services-description-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
